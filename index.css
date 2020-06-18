@@ -117,7 +117,7 @@ a:hover {
 #h1 {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1.5rem;
+    letter-spacing: .0rem;
     font-weight: 100;
     color: rgba(255, 251, 0, 0.8);
     width: 100%;
@@ -133,8 +133,8 @@ a:hover {
 }
 
 .midcontainer,
-h4 {
-
+.h4 {
+    color: white;
     font-family: "Space Mono";
     font-weight: 400;
     letter-spacing: 0rem;
@@ -155,13 +155,16 @@ i {
 
 .container2,
 .photo {
+    
     opacity: 0.9;
-    display: flex;
+    display: inline-flex;
     position: relative;
-    right: 6rem;
-    justify-content: center;
-    align-content: center;
+    left: 4rem;
+    width: 1220px;
+    height: 480px;
     align-items: center;
+    align-content: center;
+    justify-content: center;
     box-shadow: 0rem 0rem 0.00rem white;
     transition: opacity 0.2s linear;
     transition: all 0.4s linear;
@@ -169,7 +172,8 @@ i {
 
 .contianer2, 
 .photo:hover {
-    right: -4rem;
+    
+    left: -4rem;
     border: 1px white solid;
     border: 5px gold solid;
     transition: all 0.3s linear 0.3s ;
@@ -178,23 +182,19 @@ i {
     
 }
 
-.container2,
+.footer,
 .photo1 {
-    display: flex;
-    position: relative;
-    margin-left: 1rem;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    transition: transform 0.4s;
+    
+    display: inline-flex;
+    transition: transform linear 0.5s;
     
 }
 
-.contianer2, 
+.footer, 
 .photo1:hover {
     
-    transition: scale(1.2);
-    transition: all 0.3s linear 0.1s ;
+    transform: scale(1.2);
+    transition: transform 0.3s linear 0.1s ;
     
     
 }
@@ -220,11 +220,12 @@ h4 {
 
 .footer,
 #h4 {
-
+    margin-top: 1rem;
 }
 
 .footer,
 img {
+    
     padding-right: 1rem;
     color: gold;
 }
